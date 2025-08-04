@@ -1,0 +1,120 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(-45deg, #1f6feb, #141e30, #0d1117, #58a6ff);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  #hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-button {
+  padding: 14px 32px;
+  background-color: #58a6ff;
+  color: #0d1117;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cta-button:hover {
+  background-color: #1f6feb;
+  transform: translateY(-4px);
+}
+
+/* Floating animation for logo */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-logo {
+    width: 90px;
+  }
+
+  .cta-button {
+    padding: 12px 24px;
+  }
+}.social-links {
+  margin: 20px 0;
+}
+
+
+.social-links {
+  margin: 20px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+body {
+  background: black;
+  overflow-x: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(white 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: starMove 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes starMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50%, 50%); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
